@@ -1,0 +1,155 @@
+.intro {
+  color: $beige;
+  background-color: $emerald;
+  background: url("../../img/intro-1.png") no-repeat 50% 30% / cover gray;
+  background-blend-mode: multiply;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 100px;
+    margin-top: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 99px;
+  }
+}
+
+.intro__container {
+  max-width: $max-width;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    align-items: flex-end;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.intro__main-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 32px;
+  }
+}
+
+.intro__name {
+  position: relative;
+  color: $emerald;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $yale-blue;
+    width: 50px;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $yale-blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+  }
+}
+
+.intro__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+.intro__pluses-list {
+  margin-bottom: 30px;
+}
+
+.intro__pluses-item {
+  position: relative;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 30px;
+  margin-bottom: 15px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 0;
+    background: url("../../img/icon-plus.png") no-repeat center / cover;
+  }
+}
+
+.intro__text {
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+}
+
+.callback-form__button {
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: $beige;
+  font-weight: 700;
+  background-color: $yale-blue;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

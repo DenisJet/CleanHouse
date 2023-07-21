@@ -1,0 +1,30 @@
+.dlya-organizaciy__body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dlya-organizaciy__page-intro {
+  padding-top: 50px;
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
+}
+
+.dlya-organizaciy__about-ses {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dlya-organizaciy .tarif__table-title {
+  text-align: center;
+}
+
+.dlya-organizaciy .tarif__table-price {
+  text-align: center;
+}

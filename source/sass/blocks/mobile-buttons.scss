@@ -1,0 +1,54 @@
+.mobile-buttons {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.mobile-buttons__call-button {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: $yale-blue;
+  background-color: $beige;
+  width: 100%;
+  border: 1px solid $yale-blue;
+  border-radius: 2px;
+  padding: 10px;
+  padding-left: 35px;
+  margin-right: 5px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../../img/icon-phone.png");
+    background-size: contain;
+    background-position: center;
+    top: 5px;
+    left: 8px;
+  }
+}
+
+.mobile-buttons__callback-button {
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  color: $yale-blue;
+  background-color: $beige;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $yale-blue;
+  border-radius: 2px;
+  margin-left: 5px;
+}

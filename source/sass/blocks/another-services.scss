@@ -1,0 +1,128 @@
+.another-services {
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.another-services__table-container {
+  overflow: scroll;
+  margin-bottom: 75px;
+
+  @media (min-width: $desktop-width) {
+    overflow: auto;
+  }
+
+  & small {
+    color: $yale-blue;
+  }
+}
+
+.another-services__table-title {
+  font-size: 18px;
+  padding-left: 10px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+  }
+}
+
+.another-services__table {
+  color: $yale-blue;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  min-width: 650px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+  }
+}
+
+.another-services__table--1 {
+  min-width: 400px;
+
+  & .another-services__table-price {
+    text-align: center;
+  }
+}
+
+.another-services__table-item {
+  &:nth-child(odd) {
+    background-color: $beige;
+  }
+}
+
+.another-services__table-price {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.another-services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+.another-services__item {
+  position: relative;
+  text-align: center;
+  color: $yale-blue;
+  width: 250px;
+  height: 275px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 10px 10px 10px $beige, -10px -10px 10px $beige;
+  }
+}
+
+.another-services__item-price {
+  color: $emerald;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.another-services__item-text {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.another-services__item-button {
+  position: absolute;
+  padding-left: 40px;
+  padding-right: 40px;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.another-services__button {
+  display: block;
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,155 @@
+.footer {
+  background-color:	$footer-background;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-around;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 20px 100px 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: $emerald;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.footer__item {
+  margin-bottom: 15px;
+}
+
+.footer__logo {
+  border-radius: 25px;
+
+  &-title {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: $emerald;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  color: $emerald;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  & .footer__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $emerald;
+  }
+}
+
+.footer__text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer__link {
+  color: $beige;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+
+  &--mail {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      top: 6px;
+      left: 0;
+      background: url("../../img/icon-footer-mail.png") no-repeat center / cover ;
+    }
+  }
+
+  &--phone {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      top: 6px;
+      left: 0;
+      background: url("../../img/icon-footer-telephone.png") no-repeat center / cover ;
+    }
+  }
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.footer__nav {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.footer__nav-item .footer__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__item--uslugi {
+  & .footer__title {
+    margin-bottom: 5px;
+  }
+
+  & .footer__text {
+    margin: 0;
+  }
+
+  & .footer__link {
+    padding: 0;
+  }
+}

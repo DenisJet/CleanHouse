@@ -1,0 +1,15 @@
+.button-link {
+  background-color: transparent;
+  color: $persian-green;
+  font-weight: 600;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $emerald;
+  }
+
+  &:active {
+    color: $persian-green;
+  }
+}

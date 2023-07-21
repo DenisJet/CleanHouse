@@ -1,0 +1,63 @@
+.advantages {
+  background-color: $beige;
+}
+
+.advantages__container {
+  color: $yale-blue;
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  text-align: center;
+}
+
+.advantages__item {
+  position: relative;
+  width: 300px;
+  height: 235px;
+  padding-top: 75px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: url("../../img/icon-check.png") no-repeat center / cover;
+  }
+}
+
+.advantages__item-title {
+  margin-top: 0;
+}
+
+.advantages__button-link {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

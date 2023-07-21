@@ -1,0 +1,27 @@
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  color: $yale-blue;
+  background-color: $beige;
+  text-align: center;
+  font-weight: 600;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.callback-form__input {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: $yale-blue;
+  border-color: $yale-blue;
+  padding: 10px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

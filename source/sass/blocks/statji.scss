@@ -1,0 +1,17 @@
+.statji__body {
+  color: $yale-blue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.statji__page-intro {
+  padding-top: 50px;
+  margin-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
+}

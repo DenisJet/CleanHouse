@@ -1,0 +1,223 @@
+.header-wrapper {
+  position: fixed;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 55px;
+  z-index: 2;
+  background-color: $basic-white;
+  border-bottom: 1px solid $yale-blue;
+
+  @media (min-width: $tablet-width) {
+    height: 105px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100px;
+  }
+}
+
+.header {
+  width: 100%;
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+
+  @media (min-width: $max-width) {
+    width: 1200px;
+  }
+}
+
+.header__inner-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 50зч;
+    padding-left: 100px;
+    padding-right: 20px;
+    border-left: 1px solid $yale-blue;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: $max-width) {
+    border-right: 1px solid $yale-blue;
+  }
+}
+
+.header__link {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  left: 10px;
+  top: 5px;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    grid-row: 1 / 3;
+    width: 100px;
+    margin: auto;
+  }
+}
+
+.header__logo {
+  width: 75px;
+  height: 50px;
+  object-fit: contain;
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+  }
+}
+
+.header__title {
+  display: none;
+  color: $persian-green;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.header__text {
+  font-size: 14px;
+  font-weight: 700;
+  color: $yale-blue;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+.header__main-nav {
+  margin-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -1;
+    border-left: 1px solid $yale-blue;
+    margin-top: 0;
+  }
+
+  @media (min-width: $max-width) {
+    border-right: 1px solid $yale-blue;
+  }
+}
+
+.header__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.header__tel {
+  display: none;
+  position: relative;
+  color: $yale-blue;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url("../../img/icon-phone.png");
+    background-size: contain;
+    background-position: center;
+    top: -2px;
+    left: 5px;
+  }
+
+  &:hover {
+    color: $persian-green;
+  }
+
+  &:active {
+    color: $yale-blue;
+  }
+}
+
+.header__toggle-button {
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 20px 20px;
+  border: none;
+  top: 7px;
+  right: 10px;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__toggle-button--closed::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon-hamburger.png");
+  background-size: contain;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  top: 6px;
+  left: 5px;
+}
+
+.header__toggle-button--opened::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon-close.png");
+  background-size: contain;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  top: 6px;
+  left: 5px;
+}
+
+.header__toggle-button--nojs {
+  display: none;
+}

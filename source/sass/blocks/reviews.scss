@@ -1,0 +1,229 @@
+.reviews {
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.reviews__title {
+  color: $yale-blue;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+}
+
+.reviews__text {
+  position: relative;
+  color: $yale-blue;
+  font-weight: 600;
+  text-align: center;
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $persian-green;
+    width: 50px;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $persian-green;
+  }
+}
+
+.reviews__button-link {
+  display: block;
+  width: max-content;
+  margin: 20px auto;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.reviews__item {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
+  max-width: 500px;
+}
+
+.reviews__item-img {
+  width: 200px;
+  height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--myasnoy-domik {
+    background: url("../../img/reviews/myasnoy-domik.png") no-repeat center / contain;
+  }
+
+  &--medea {
+    background: url("../../img/reviews/medea.png") no-repeat center / contain;
+  }
+
+  &--teka-navigation {
+    background: url("../../img/reviews/teka-navigation.png") no-repeat center / contain;
+  }
+
+  &--mia {
+    background: url("../../img/reviews/mia.png") no-repeat center / contain;
+  }
+
+  &--gardenia {
+    background: url("../../img/reviews/gardenia.png") no-repeat center / contain;
+  }
+
+  &--viston {
+    background: url("../../img/reviews/viston.png") no-repeat center / contain;
+  }
+}
+
+.reviews__item-title {
+  color: $yale-blue;
+  font-weight: 700;
+}
+
+.reviews__item-location {
+  display: inline;
+  position: relative;
+  color: $persian-green;
+  font-weight: 600;
+  padding-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    top: -5px;
+    left: 0;
+    background: url("../../img/icon-location.png") no-repeat center / cover;
+  }
+}
+
+.reviews__item-text {
+  position: relative;
+  color: $yale-blue;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  margin-top: 30px;
+
+  &::before {
+    position: absolute;
+    content: "\201C";
+    font-size: 60px;
+    color: $persian-green;
+    width: 32px;
+    height: 32px;
+    top: -10px;
+    left: 0;
+  }
+
+  &::after {
+    position: absolute;
+    content: "\201C";
+    font-size: 60px;
+    color: $persian-green;
+    width: 32px;
+    height: 32px;
+    bottom: -10px;
+    right: 0;
+    transform: rotate(180deg);
+  }
+}
+
+.reviews__peoples-reviews-swiper {
+  width: 300px;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+  }
+}
+
+.reviews__peoples-reviews-item {
+  text-align: center;
+  color: $yale-blue;
+  padding: 10px;
+  margin-bottom: 50px;
+  box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+.reviews__peoples-reviews-photo {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--male {
+    background: url("../../img/reviews/photo-male.png") no-repeat center / contain;
+  }
+
+  &--female {
+    background: url("../../img/reviews/photo-female.png") no-repeat center / contain;
+  }
+}
+
+.reviews__peoples-reviews-text {
+  font-size: 13px;
+}
+
+.reviews__peoples-reviews-button-next,
+.reviews__peoples-reviews-button-prev {
+  color: $emerald;
+}
+
+.swiper-pagination-bullet-active-main {
+  background-color: $emerald;
+}

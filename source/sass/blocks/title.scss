@@ -1,0 +1,23 @@
+.title {
+  position: relative;
+  color: $yale-blue;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $persian-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+}

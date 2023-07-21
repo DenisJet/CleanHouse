@@ -1,0 +1,62 @@
+.filials {
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.filials__list {
+  height: 325px;
+  overflow-y: scroll;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-y: auto;
+  }
+}
+
+.filials__item {
+  position: relative;
+  color: $yale-blue;
+  font-size: 14px;
+  cursor: pointer;
+  padding-left: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    background: url("../../img/icon-location.png") no-repeat center / cover;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: $persian-green;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

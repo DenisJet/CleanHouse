@@ -1,0 +1,44 @@
+.o-kompanii__page-intro {
+  padding-top: 65px;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
+}
+
+.o-kompanii__about-ses {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.o-kompanii__reviews {
+  display: block;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+  }
+
+  & .reviews__text {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  & .reviews__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  & .reviews__item {
+    max-width: 500px;
+  }
+}

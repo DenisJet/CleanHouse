@@ -1,0 +1,96 @@
+.main-nav {
+  text-align: center;
+  background-color: $basic-white;
+  z-index: 1;
+
+  &--closed {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    transition: 0.6s;
+  }
+
+  &--opened {
+    visibility: visible;
+    opacity: 1;
+    max-height: 233px;
+    transition: 0.6s;
+  }
+
+  @media (min-width: $tablet-width) {
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    max-height: max-content;
+    border-top: 1px solid $yale-blue;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.main-nav__list {
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+}
+
+.main-nav--nojs {
+  @media (max-width: $tablet-width) {
+    visibility: visible;
+    opacity: 1;
+    max-height: 233px;
+    transition: 0.6s;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $basic-black;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: $yale-blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover {
+    color: $persian-green;
+  }
+
+  &:active {
+    color: $yale-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 15px 10px;
+  }
+}
+
+.main-nav__link--active {
+  color: $persian-green;
+  cursor: default;
+
+  &:hover {
+    color: $persian-green;
+  }
+
+  &:active {
+    color: $persian-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+  }
+}

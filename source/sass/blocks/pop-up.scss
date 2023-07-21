@@ -1,0 +1,95 @@
+.pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 2;
+  transform:  scale(0);
+  transition: .6s ease-in-out;
+
+  &--active {
+    transform:  scale(100%);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.pop-up__container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 400px;
+  background-color: $beige;
+  border-radius: 2px;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+  ;
+}
+
+.pop-up__text {
+  color: $yale-blue;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.pop-up__form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pop-up__input {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 30px;
+  border-color: $yale-blue;
+  width: 100%;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}
+
+.pop-up__button {
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: $beige;
+  font-weight: 700;
+  background-color: $yale-blue;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.pop-up__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $yale-blue;
+  font-size: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

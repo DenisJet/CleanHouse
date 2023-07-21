@@ -1,0 +1,14 @@
+.service-page__page-intro {
+  padding-top: 50px;
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 100px;
+  }
+}
+
+.service-page__about-ses--odd {
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,19 @@
+.button {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: $beige;
+  background-color: $yale-blue;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $persian-green;
+  }
+
+  &:active {
+    background-color: $yale-blue;
+  }
+}

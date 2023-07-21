@@ -1,0 +1,352 @@
+.inner-article {
+  background-color: $beige;
+
+  &--white {
+    background-color: $basic-white;
+  }
+}
+
+.inner-article__container {
+  color: $yale-blue;
+  font-weight: 600;
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.inner-article__title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+}
+
+.inner-article__text-container {
+  max-width: $desktop-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner-article__text {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 50px 20px 0 20px;
+  margin-bottom: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $persian-green;
+    width: 50px;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+
+  & li {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.inner-article__button-link {
+  display: block;
+  width: max-content;
+  margin: 60px auto;
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.inner-article__image-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.inner-article__image {
+  width: 100%;
+  height: 150px;
+
+  &--1 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/inner-articles/inner-article-1.png") no-repeat bottom center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 3;
+      height: 250px;
+    }
+  }
+
+  &--2 {
+    background: url("../../img/inner-articles/inner-article-2.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--3 {
+    background: url("../../img/inner-articles/inner-article-3.png") no-repeat center center / cover;
+  }
+
+  &--4 {
+    background: url("../../img/inner-articles/inner-article-4.png") no-repeat center center / cover;
+  }
+
+  &--5 {
+    background: url("../../img/inner-articles/inner-article-5.png") no-repeat center right / cover;
+  }
+
+  &--6 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/inner-articles/inner-article-6.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: -1 / -2;
+      height: 150px;
+    }
+  }
+
+  &--dezinfekciya-1 {
+    background: url("../../img/inner-articles/dezinfekciya-1.png") no-repeat center center / cover;
+  }
+
+  &--dezinfekciya-2 {
+    background: url("../../img/inner-articles/dezinfekciya-2.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-1 {
+    background: url("../../img/inner-articles/deratizaciya-2.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-2 {
+    background: url("../../img/inner-articles/deratizaciya-3.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-3 {
+    background: url("../../img/inner-articles/deratizaciya-4.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-4 {
+    background: url("../../img/inner-articles/deratizaciya-5.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-5 {
+    background: url("../../img/inner-articles/deratizaciya-6.png") no-repeat center center / cover;
+  }
+
+  &--deratizaciya-6 {
+    background: url("../../img/pest-control.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-1 {
+    background: url("../../img/inner-articles/deratizaciya-1.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-2 {
+    background: url("../../img/about-ses-img-2.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-3 {
+    background: url("../../img/about-ses-img-3.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-4 {
+    background: url("../../img/about-ses-img-4.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-5 {
+    background: url("../../img/about-ses-img-5.png") no-repeat center center / cover;
+  }
+
+  &--about-ses-6 {
+    background: url("../../img/about-ses-img-6.png") no-repeat center center / cover;
+  }
+
+  &--tarakan {
+    background: url("../../img/inner-articles/tarakan.png") no-repeat center center / cover;
+  }
+
+  &--klop {
+    background: url("../../img/inner-articles/klop.png") no-repeat center center / cover;
+  }
+
+  &--muravei-1 {
+    background: url("../../img/inner-articles/muravei-1.png") no-repeat center center / cover;
+  }
+
+  &--muravei-2 {
+    background: url("../../img/inner-articles/muravei-2.png") no-repeat center center / cover;
+  }
+
+  &--bloha-1 {
+    background: url("../../img/uslugi/bloha.png") no-repeat center center / cover;
+  }
+
+  &--bloha-2 {
+    background: url("../../img/inner-articles/bloha-1.png") no-repeat center center / cover;
+  }
+
+  &--klesh-1 {
+    background: url("../../img/inner-articles/klesh-1.png") no-repeat center center / cover;
+  }
+
+  &--klesh-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/uslugi/klesh.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--osa-1 {
+    background: url("../../img/inner-articles/osa.png") no-repeat center center / cover;
+  }
+
+  &--osa-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/uslugi/osa.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--komar-1 {
+    background: url("../../img/inner-articles/komar.png") no-repeat center center / cover;
+  }
+
+  &--komar-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/uslugi/komar.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--muha-1 {
+    background: url("../../img/inner-articles/muha.png") no-repeat center center / cover;
+  }
+
+  &--muha-2 {
+    background: url("../../img/uslugi/muha.png") no-repeat center center / cover;
+  }
+
+  &--koroed-1 {
+    background: url("../../img/uslugi/koroed.png") no-repeat center center / cover;
+  }
+
+  &--koroed-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/about-ses-img-6.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--krot-1 {
+    background: url("../../img/uslugi/krot.png") no-repeat center center / cover;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / -1;
+      max-width: 600px;
+    }
+  }
+
+  &--plesen-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/uslugi/plesen.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--rtut-1 {
+    background: url("../../img/uslugi/rtut.png") no-repeat center center / cover;
+  }
+
+  &--rtut-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/inner-articles/inner-article-1.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+
+  &--zapah-1 {
+    background: url("../../img/inner-articles/inner-article-1.png") no-repeat center center / cover;
+  }
+
+  &--zapah-2 {
+    grid-column: 1 / -1;
+    height: 200px;
+    background: url("../../img/uslugi/zapah.png") no-repeat center center / cover;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 3 / -1;
+      height: 250px;
+    }
+  }
+}
