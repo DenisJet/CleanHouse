@@ -77,6 +77,14 @@
       margin-bottom: 50px;
     }
   }
+
+  & a {
+    color: $persian-green;
+
+    &:hover {
+      color: $yale-blue;
+    }
+  }
 }
 
 .inner-article__button-link {
