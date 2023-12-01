@@ -161,6 +161,12 @@
       </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- Yandex.RTB -->
+    <script>
+      window.yaContextCb = window.yaContextCb || [];
+    </script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
   </head>
 
   <body class="service-page__body">
@@ -460,6 +466,19 @@
           </button>
         </div>
       </section>
+
+      <div class="yandex-reklama">
+        <!-- Yandex.RTB R-A-4164447-1 -->
+        <div id="yandex_rtb_R-A-4164447-1"></div>
+        <script>
+          window.yaContextCb.push(() => {
+            Ya.Context.AdvManager.render({
+              blockId: "R-A-4164447-1",
+              renderTo: "yandex_rtb_R-A-4164447-1",
+            });
+          });
+        </script>
+      </div>
 
       <section
         class="inner-article service-page__inner-article inner-article--white"
