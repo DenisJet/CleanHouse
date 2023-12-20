@@ -1,11 +1,11 @@
 .tarif {
   max-width: $max-width;
-  padding-top: 50px;
-  padding-bottom: 50px;
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: $padding-tablet;
@@ -82,7 +82,14 @@
   font-size: 18px;
   font-weight: 500;
   width: 100%;
-  min-width: 650px;
+  min-width: 400px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--plus {
+    min-width: 650px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
