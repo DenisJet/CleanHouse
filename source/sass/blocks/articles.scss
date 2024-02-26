@@ -31,6 +31,12 @@
   max-width: 350px;
   padding: 10px;
   box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
 }
 
 .articles__item-image {
@@ -71,6 +77,10 @@
 
   &--tarakan-v-kvartire {
     background: url("../../img/articles/tarakan-v-kvartire.png") no-repeat center / cover;
+  }
+
+  &--holodnyi-tuman {
+    background: url("../../img/about-ses-img-5.png") no-repeat center / cover;
   }
 }
 
