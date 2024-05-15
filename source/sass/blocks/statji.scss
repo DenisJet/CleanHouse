@@ -15,3 +15,126 @@
     margin-top: 80px;
   }
 }
+
+.statji__list {
+  max-width: $max-width;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+.statji__list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.statji__item {
+  color: $yale-blue;
+  padding: 10px;
+  box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+  }
+}
+
+.statji__item-title {
+  margin-top: 0;
+}
+
+.statji__item-text {
+  @media (min-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+}
+
+.statji__item-image {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+
+  @media (min-width: 500px) {
+    margin-bottom: 0;
+    height: 125px;
+  }
+
+  &--podgotovka {
+    background: url("../../img/articles/podgotovka.png") no-repeat center / cover;
+  }
+
+  &--borba-doma {
+    background: url("../../img/inner-articles/inner-article-4.png") no-repeat center / cover;
+  }
+
+  &--tuman {
+    background: url("../../img/about-ses-img-2.png") no-repeat center / cover;
+  }
+
+  &--postelnyi-klop {
+    background: url("../../img/uslugi/klop.png") no-repeat center / cover;
+  }
+
+  &--klopy-v-kvartire {
+    background: url("../../img/articles/klopy-v-kvartire.jpg") no-repeat center / cover;
+  }
+
+  &--prichini-tarakanov {
+    background: url("../../img/inner-articles/tarakan.png") no-repeat center / cover;
+  }
+
+  &--ukus-klopa {
+    background: url("../../img/articles/ukes-klopa.png") no-repeat center / cover;
+  }
+
+  &--spray {
+    background: url("../../img/articles/spray.jpg") no-repeat center / cover;
+  }
+
+  &--tarakan-v-kvartire {
+    background: url("../../img/articles/tarakan-v-kvartire.png") no-repeat center / cover;
+  }
+
+  &--holodnyi-tuman {
+    background: url("../../img/about-ses-img-5.png") no-repeat center / cover;
+  }
+}
+
+.statji__item-button-link {
+  display: block;
+  width: max-content;
+  margin: 20px 0 20px auto;
+
+  @media (min-width: 500px) {
+    margin: 20px 0 0 auto;
+  }
+}
+
+.statji__button-link {
+  display: block;
+  width: max-content;
+  margin: 50px auto 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
