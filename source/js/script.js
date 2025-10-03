@@ -105,7 +105,7 @@ const formHandler = (formId) => {
     evt.preventDefault();
 
     let message = `<b>Заявка с сайта CleanHouse</b>\n`;
-    message += `<b>Номер телефона: </b> ${this.number.value}\n`;
+    message += `<b>Номер телефона: ${this.number.value}\n </b> HoneyPot: ${this.honeypot.value}`;
 
     axios
       .post(URI_API, {
@@ -115,6 +115,7 @@ const formHandler = (formId) => {
       })
       .then((response) => {
         this.number.value = "";
+        this.honeypot.value = "";
         window.location = "../../thanks.html";
       })
       .catch(() => {});
