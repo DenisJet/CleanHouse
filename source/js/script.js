@@ -220,8 +220,8 @@ function replaceYearInDocument() {
   // Получаем текущий год
   const currentYear = new Date().getFullYear().toString();
 
-  // Регулярное выражение для поиска года (4 цифры)
-  const yearRegex = /\b\d{4}\b/g;
+  // Регулярное выражение для поиска конкретно 2023 года
+  const yearRegex = /\b2023\b/g;
 
   // Рекурсивная функция для обхода всех узлов
   function walkNodes(node) {
