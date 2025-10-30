@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
 }
 
@@ -49,6 +49,7 @@
   padding: 10px;
   box-shadow: 5px 5px 5px $beige, -5px -5px 5px $beige;
   transition: 1s;
+  max-width: 350px;
 
   &:hover {
     transform: scale(1.02);
@@ -60,23 +61,10 @@
   margin-top: 0;
 }
 
-.statji__item-text {
-  @media (min-width: 500px) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-}
-
 .statji__item-image {
   width: 100%;
   height: 200px;
   margin-bottom: 20px;
-
-  @media (min-width: 500px) {
-    margin-bottom: 0;
-    height: 125px;
-  }
 
   &--prichiny-klopov {
     background: url("../../img/inner-articles/klop.png") no-repeat center / cover;
@@ -129,24 +117,20 @@
   &--klop-postelnyi {
     background: url("../../img/inner-articles/postelnyi-klop.png") no-repeat center / cover;
   }
+
+    &--tarakan-2 {
+    background: url("../../img/inner-articles/tarakan-2.png") no-repeat center / cover;
+  }
 }
 
 .statji__item-button-link {
   display: block;
   width: max-content;
   margin: 20px 0 20px auto;
-
-  @media (min-width: 500px) {
-    margin: 20px 0 0 auto;
-  }
 }
 
 .statji__button-link {
   display: block;
   width: max-content;
   margin: 50px auto 0 auto;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 0;
-  }
 }
